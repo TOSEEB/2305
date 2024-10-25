@@ -2,10 +2,13 @@
 FROM ubuntu:latest
 
 
+WORKDIR /opt/app
+
+
 RUN apt-get update && \
     apt-get install -y python3 python3-pip && \
     pip3 install flask
-WORKDIR /opt/app
+
 
 COPY application.py /opt/app    
 
