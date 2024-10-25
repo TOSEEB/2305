@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                
-                git branch: 'main', url: 'https://github.com/your-repository.git'
+                git branch: 'main', url: 'https://github.com/TOSEEB/2305.git'
             }
         }
 
